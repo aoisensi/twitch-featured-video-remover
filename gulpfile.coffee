@@ -14,7 +14,6 @@ gulp.task 'manifest', ->
 
 gulp.task 'script', ->
   gulp.src './src/**.coffee'
-    .pipe do $.coffeelint
     .pipe do $.coffee
     .pipe gulp.dest './dest'
 
