@@ -1,9 +1,8 @@
 remover = ->
-  video = document.querySelector '.featured-broadcasters video'
-  if video == null
-    return
-  video.volume = 0
-  element = document.querySelector '.featured-broadcasters'
-  do element.parentElement.remove
+  element = document.querySelector '.front-page-carousel'
+  if element != null
+    video = document.querySelector '.player-video video'
+    video.volume = 0
+    do element.remove
 
 setInterval remover, 1000
